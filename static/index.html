@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ozon Data Form</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+            <h1>Таможенные декларации ETGB</h1>
+            <form id="ozonForm" onsubmit="submitForm(event)">
+
+                <label for="client_id">Client ID:</label>
+                <input type="text" name="client_id" id="client_id" required><br><br>
+                <label for="api_key">API Key:</label>
+                <input type="text" name="api_key" id="api_key" required><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <div id="successMessage">
+                Успешно!
+            </div>
+
+            <script src="static/script.js"></script>
+</body>
+</html>
